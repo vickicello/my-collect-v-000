@@ -7,3 +7,11 @@ def my_collect(collection)
   end
   collection
 end
+
+my_collect(collection) do |name|
+  name.split(" ").first
+end
+
+my_collect(collection) do |lang|
+  lang.upcase
+end
